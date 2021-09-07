@@ -1,8 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+// import todosReducer from '../features/todos/todosSlice';
+// import postsReducer from '../features/posts/postsSlice';
+// import usersReducer from '../features/users/usersSlice';
+import commentsReducer from '../features/comments/commentsSlice';
+import myDynamicFormReducer from '../features/myDynamicForm/myDynamicFormSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    comments: commentsReducer,
+    myDynamicForm: myDynamicFormReducer,
   },
 });
